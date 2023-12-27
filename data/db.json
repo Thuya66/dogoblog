@@ -1,0 +1,22 @@
+{
+  "blogs": [
+    {
+      "title": "React",
+      "body": "Ex cillum consectetur fugiat proident. Laborum veniam nisi aliqua ut duis consequat in ut minim pariatur aliquip. Ea commodo consequat aliqua pariatur ex sit sit nisi eu. Non non aliqua ad sunt ad sit dolore id sint labore officia esse.",
+      "author": "Net.Ninja",
+      "id": 1
+    },
+    {
+      "title": "HTML",
+      "body": "Ex cillum consectetur fugiat proident. Laborum veniam nisi aliqua ut duis consequat in ut minim pariatur aliquip. Ea commodo consequat aliqua pariatur ex sit sit nisi eu. Non non aliqua ad sunt ad sit dolore id sint labore officia esse.",
+      "author": "EiMaung",
+      "id": 2
+    },
+    {
+      "title": "You don't known JS",
+      "body": "Ex cillum consectetur fugiat proident. Laborum veniam nisi aliqua ut duis consequat in ut minim pariatur aliquip. Ea commodo consequat aliqua pariatur ex sit sit nisi eu. Non non aliqua ad sunt ad sit dolore id sint labore officia esse.",
+      "author": "Net.Ninja",
+      "id": 3
+    }
+  ]
+}
