@@ -1,40 +1,45 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App.tsx";
-import "./index.css";
-import CreateBlog from "./views/CreateBlog.tsx";
-import Home from "./views/Home.tsx";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import BlogDetails from "./views/BlogDetails.tsx";
-import PageNotFound from "./views/PageNotFound.tsx";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App.tsx';
+import './index.css';
+import CreateBlog from './views/CreateBlog.tsx';
+import Home from './views/Home.tsx';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from 'react-router-dom';
+import BlogDetails from './views/BlogDetails.tsx';
+import PageNotFound from './views/PageNotFound.tsx';
+
+import './i18n';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <App />,
     errorElement: null,
     children: [
       {
-        path: "/",
+        path: '/',
         element: <Home />,
       },
       {
-        path: "/create",
+        path: '/create',
         element: <CreateBlog />,
       },
       {
-        path: "/blogs/:id",
+        path: '/blogs/:id',
         element: <BlogDetails />,
       },
       {
-        path: "*",
+        path: '*',
         element: <PageNotFound />,
       },
     ],
   },
 ]);
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
+ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <RouterProvider router={router} />
   </React.StrictMode>

@@ -1,11 +1,13 @@
-import { Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 interface Props {
-  title: String;
+  title: string;
   blogs: Object[];
 }
 
 function BlogList({ title, blogs }: Props) {
+  const { t } = useTranslation();
   return (
     <div>
       <h2>{title}</h2>
@@ -13,7 +15,9 @@ function BlogList({ title, blogs }: Props) {
         <div className="blog-preview" key={blog.id}>
           <Link to={`/blogs/${blog.id}`}>
             <h2>{blog.title}</h2>
-            <p>Witten by {blog.author}</p>
+            <p>
+              {t('author')} {blog.author}
+            </p>
           </Link>
         </div>
       ))}

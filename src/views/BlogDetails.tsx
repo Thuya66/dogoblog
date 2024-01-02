@@ -1,10 +1,10 @@
-import { useParams } from "react-router-dom";
-import useFetch from "../fetch/useFetch";
-import BlogCard from "../components/BlogCard";
+import { useParams } from 'react-router-dom';
+import useFetch from '../fetch/useFetch';
+import BlogCard from '../components/BlogCard';
 
 function BlogDetails() {
   const { id } = useParams();
-  const url: string = `http://localhost:3000/blogs/${id}`;
+  const url: string = `http://192.168.1.20:3000/blogs/${id}`;
   const { data: blog, isPending, error } = useFetch(url);
 
   return (
