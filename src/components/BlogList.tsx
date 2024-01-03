@@ -6,11 +6,11 @@ interface Props {
   blogs: Object[];
 }
 
-function BlogList({ title, blogs }: Props) {
+function BlogList({ blogs }: Props) {
   const { t } = useTranslation();
   return (
     <div>
-      <h2>{title}</h2>
+      <h2>{t('blogTitle')}</h2>
       {blogs.map((blog: any) => (
         <div className="blog-preview" key={blog.id}>
           <Link to={`/blogs/${blog.id}`}>

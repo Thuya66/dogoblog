@@ -17,7 +17,7 @@ i18n.use(initReactI18next).init({
     en: {
       translation: {
         author: 'Written by ',
-        blogTitle: 'All Blogs',
+        blogTitle: 'All Blogs ',
       },
     },
   },
